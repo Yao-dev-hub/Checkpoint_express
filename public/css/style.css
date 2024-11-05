@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banniere{
+    height: 450px;
+    background-image: linear-gradient(rgba(231, 231, 231, 0.285),rgba(231, 231, 231, 0.285)),url(../images/autres/banniere_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banniere .col-lg-12{
+    margin-top: 120px;
+}
+
+.border-top-sucess{
+    border: 5px solid green;
+    border-bottom-color:transparent;
+    border-right-color:transparent;
+    border-left-color:transparent;
+}
+
+.fonctiaonnalite{
+
+    margin-top: 80px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* Animation css pour changer le background du block */
+.animation-card{
+    transition: background-color 0.5s ease
+}
+
+/* Definition de l'animation */
+.animation-card:hover{
+    animation: changeColor 0.5s forwards;
+}
+
+/* Animation pour changer la couleur*/
+@keyframes changeColor {
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: rgb(21, 124, 5);
+    }
+}
+
+.border-right{
+    border: 1px solid #0000002f;
+    border-top-color:transparent ;
+    border-right-color:transparent ;
+    border-bottom-color:transparent ;
+}
+
+.list-group-item:hover{
+    border: 3px solid transparent;
+    border-bottom-color:green ;
+}
+
+.arrondie{
+    border-radius: 10px;
+    background-color: rgba(181, 181, 181, 0.182);
+}
+
+.contact-parent{
+    display: block;
+}
+
+.contact{
+    visibility: hidden;
+    opacity: 0;
+    transition: background-color 0.5s ease;
+    transition: all 1s ease;
+
+}
+
+.contact-parent:hover .contact {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(max-width:768px){
+    .banniere .col-lg-12{
+        margin-top: 80px;
+    }
+
+    .mobile-width{
+        width: 350px;
+        margin:0 auto;
+    }
+
+    .border-right{
+        border: 1px solid #00000000;
+    }
+}
