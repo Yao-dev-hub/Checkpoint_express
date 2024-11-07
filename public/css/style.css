@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgba(225, 225, 225, 0.671);
+}
+
 .banniere{
     height: 450px;
     background-image: linear-gradient(rgba(231, 231, 231, 0.285),rgba(231, 231, 231, 0.285)),url(../images/autres/banniere_1.jpg);
@@ -70,7 +74,7 @@ li{
 
 .arrondie{
     border-radius: 10px;
-    background-color: rgba(181, 181, 181, 0.182);
+    background-color: rgba(181, 181, 181, 0.285);
 }
 
 .contact-parent{
@@ -88,6 +92,32 @@ li{
 .contact-parent:hover .contact {
     opacity: 1;
     visibility: visible;
+}
+
+.service{
+    background-color: rgba(225, 225, 225, 0.671);
+
+}
+
+.footer{
+    background-color: green;
+}
+
+/* *** Page a propos *** */
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(225, 225, 225, 0.671); */
+}
+.banniere-about{
+    height: 550px;
+    background-image:url(../images/autres/doc_5.png);
+    /* background-color: rgba(225, 225, 225, 0.671); */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 30%;
 }
 
 @media(max-width:768px){
